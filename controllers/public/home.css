@@ -1,0 +1,125 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    margin:0;
+}
+header{
+    top:0vh;
+    position:sticky;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+    border-bottom: 3px solid #405839;
+    color: #ffffff;
+    background: rgb(39, 33, 27);
+    letter-spacing: 1vw;
+    text-align: center;
+    z-index: 10000;
+    
+}
+body>section{
+    padding:0px
+}
+.renders h2{
+    width:100%;
+    text-align: center;
+}
+.renders{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.renders section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00754a;
+}
+.introduction{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top:0;
+    min-height:70vh;
+    max-height: 90vh;
+    margin-top: 0;
+    background:#00754a;
+    border-bottom: 20px solid #12160e ;
+}
+.introduction p{
+    text-indent: 2em;
+    min-width:20%;
+    max-width: 60%;
+}
+.introduction p + p{
+    text-indent: 0em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.renders .renderimages{
+    border:2px solid rgb(0, 0, 0);
+    
+    width:50%;
+}
+.renderimages img{
+    width: 100%;
+}
+.renders div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%
+    
+}
+.renders div p{
+    width:60%;
+    text-align: center;
+}
+.renders h2 a{
+    color: #12160e;
+}
+.renders h2 a:hover{
+    color: #a7be9d;
+    
+}
+
+.api{
+    top:0vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    border-bottom: 3px solid #405839;
+    color: #312020;
+    background: #93b684;
+    text-align: center;
+    z-index: 10000;
+    
+}
+
+.api a{
+    color: #12160e;
+}
+.api a:hover{
+    color: #50f40a;
+    text-decoration: none;
+    
+}
+.api{
+    width:100%;
+    border-top: 3px solid #405839;
+    border-bottom: 3px solid #405839;
+}
+.api ul{
+    padding:0;
+    list-style: none;
+    font-size: larger;
+}
+.api ul li{
+    display:block;
+}

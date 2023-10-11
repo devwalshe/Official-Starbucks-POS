@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content = 'Barista Trainer, Coffee Trainer, r/Starbucks, Inspire the human spirit, POS, POS simulator, Coffee, Espresso, Blended Coffee'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Coffee Trainer</title>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z6EZZ2FXV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9Z6EZZ2FXV');
+</script>
+<body>
+    <header>
+        <h1>COFFEE TRAINER</h1> 
+    </header>
+    <section class="introduction">
+        <h2>Welcome!</h2>
+        <p>Welcome to coffeetrainer.cafe! I am happy that you decided to check out my passion project, and I hope you have a positive experience with my program.
+            When creating this project I set out to create a tool that helps new baristas get a better understanding of the POS that they work in and
+            to have an easier time grasping the layout without being rushed onto the floor with the risk of ringing up a wrong order. Every time I thought
+            project was finished, I found a new way to improve it. At this time the random customer generator that the program uses can utilize all customization options,
+            and creates the possibility of over 8.12 × 10<sup>22</sup> possible "customer" requests. If this project was utilized by the company, it would save 
+            approximately $720,000 dollars a year(this is a rough estimate). If you are interested in using this project in your store, please send me an email at jacob259@gmail.com.
+        </p>
+        <p>-Jacob</p>
+    </section>
+    <section class="renders">
+        <section>
+            <h2><a class="drinkVis" href="http://localhost:8000/coreDrinks">Drink Visualizer</a></h2>
+            <div class="renderimages"><img src="../IMG/coredrinks.png"></div>
+            <div>
+                <p>The Drink Visualizer is an intuitive way to show drinks with their
+                    core ingredients. By interpreting the information sent by the coffeetrainerAPI,
+                    the visualizer can generate a picture that shows exactly what percentage
+                    of the drink is sugary syrup and what part is coffee. This will help 
+                    both baristas and customers get a better understanding of what is going to
+                    cups.
+                </p>
+                <p>When making these drinks, don't forget to add the love and care by hand from the heart!</p>
+            </div>
+        </section>
+        <section>
+            <h2><a class="menu" href="http://localhost:8000/pos">POS Simulator</a></h2>
+            <div class="renderimages"><img src="../IMG/menu.png"></div>
+            <div><p>Using the app, baristas can effectively: learn how to take actual customer
+                orders, become familiar with the layout of the POS system, and become more comfortable asking questions to customers
+                so they can make the moment right with every order. This project takes in many parameters to wholly simulate
+                on-the-job scenarios, so partners feel comfortable before their first day on the floor.
+            </p></div>
+        </section>
+        <section>
+            <h2><a class="roasts" href="http://localhost:8000/roasts">Roasts</a></h2>
+            <div class="renderimages"><img src="../IMG/roasts.png"></div>
+            <div><p>The roasts section is a collection of all the Starbucks™ core and seasonal
+                roasts. Complete with notes, flavors, and growing regions, the roasts page has 
+                all the informational building blocks to start your journey as a coffee master or to
+                "bring your best" to your next coffee tasting.
+            </p></div>
+        </section>
+    </section>
+
+    <section class="api">
+        <ul>API Links:
+            <li><a class="apiDrinks" href="http://localhost:8000/api/coreDrinks">All Drinks</a></li>
+            <li><a class="apiCustomers" href="http://localhost:8000/api/allcustomers">All Customers</a></li>
+            <li><a class="apiRoasts" href="http://localhost:8000/api/roasts">Roasts</a></li>
+            <li><a class="apiCust" href="http://localhost:8000/api/customizations">Customizations</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

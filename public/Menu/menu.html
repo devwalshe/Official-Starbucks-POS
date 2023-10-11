@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../home.css"> 
+    <link rel="stylesheet" href="../Menu/menu.css"> 
+    <script src="https://kit.fontawesome.com/082f4a75c7.js" crossorigin="anonymous"></script>
+
+    <title>POS Sim</title>
+    <link rel="icon" type="image/x-icon" href="../IMG/Favicon.ico">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z6EZZ2FXV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9Z6EZZ2FXV');
+</script>
+<body>
+    <header>
+        <h1>POINT OF SALE (POS) SIMULATOR</h1>
+    </header>
+    <div>
+        
+
+
+
+        
+    </div>
+    <div class = 'customerArea'>
+        <h1>Name: <span class="customerName">Can't connect</span></h1>
+        <h1>"Hi, I'd like a <span class="customerAsk"></span>."</h1>
+    </div>
+    <div class="menuWrapper loading">
+        
+        <section class="menu">
+            <div class="loadCon">
+                
+                <span class="loader2"></span>
+                <span class="loader"></span>
+            </div>
+            <div id="winOrLose" class = "hidden">
+                <h1>CORRECT!</h1>
+                <p></p>
+                <div class="winCont hidden">Continue</div>
+                <div class="loseSkip hidden">Skip</div>
+                <div class="loseTry hidden">Try Again</div>
+            </div>
+            <div class="errorMessage">
+                <div class="errorBox">
+                    <p></p>
+                    <div class="clearButtons">
+                        <div class = 'cancelError'>Cancel</div>
+                        <div class = 'clearError'>OK</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quantityForShots">
+                <div class="quantityBox">
+                    <h1>Select Quantity:</h1>
+                    <div class="displayAmount">
+                        <p></p>
+                    </div>
+                    <div class="quantityNums">
+                        <div class="number">1</div>
+                        <div class="number">2</div>
+                        <div class="number">3</div>
+                        <div class="number">4</div>
+                        <div class="number">5</div>
+                        <div class="number">6</div>
+                        <div class="number">7</div>
+                        <div class="number">8</div>
+                        <div class="number">9</div>
+                        <div class = 'cancelError'>Cancel</div>
+                        <div class="number">0</div>
+                        <div class = 'clearError'>OK</div>
+                    </div>
+                </div>
+            </div>
+            <section class ='orders'>
+                <sections class="sections">
+                    <div>
+                        <div class="selected">Order</div>
+                        <div class="selected"></div>
+                    </div>
+                    <div>
+                        <div>Tender</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>Functions</div>
+                        <div></div>
+                    </div>
+                </sections>
+                <div class="screen">
+                    <section class="namebar">
+                        <div class="statusLight"></div>
+                        <p>William Walsh</p>
+                    </section>
+
+
+                    <section class = "pickedDrinks">
+                        
+                    </section>
+
+
+                    
+                    <section class = 'buttons'>
+                        <div class="shows">
+                            <button class = 'quantity'>Quantity</button>
+                            <section class = 'desc'>
+                                <div>Subtotal:</div>
+                                <div>Discounts:</div>
+                                <div>Tax:</div>
+                                <div class = last>Total Due:</div>
+                            </section>
+                            <section class = 'prices'>
+                                <div>$0.00</div>
+                                <div>$0.00</div>
+                                <div>$0.00</div>
+                                <div class="findOrder">$0.00</div>
+                            </section>
+                        </div>
+                        <div class = 'submits'>
+                            <button type='button' class = 'void'>Void Item</button>
+                            <button type="button" class = 'forHere'>For Here</button>
+                            <button type="button" class = 'discount'>Discount</button>
+                            <button type="button" class = 'LOCK'><i class="fa-solid fa-lock fa-2xl"></i></button>
+                            <button type="button" class = 'toGo'>To Go</button>
+                            <button class ='findOrder'>Save Order</button>
+                            
+                        </div>
+                        <div class ='numbers hidden'>
+                            
+                            <button class="cancel">Cancel</button>
+                            <div class ='input'></div>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button class = 'back'>Backspace</button>
+                            <button class = 'enter'>Enter</button>
+                            
+                        </div>
+                    </section>
+                </div>
+
+            </section>
+            <section class = 'itemSelection'>
+                <section class="categories">
+                    <button class="misc">Misc</button>
+                    <button class="beans">Beans</button>
+                    <button class="rtde">RTD&E</button>
+                    <button class="food">Food</button>
+                    <button class="drinkBuilder selected">Drink <em>Builder</em></button>
+                </section>
+                <section class="drinkPicker">
+                    <section class="items">
+
+                    </section>
+                    <form id='drinkObj' method="POST" action="/order" class="customizations">
+                        <section class="shotsMenu highlight">
+                            <div class="iceCheck">
+                                <div></div>
+                                Iced
+                            </div>
+                            <div class="decafCheck regular">
+                                Decaf
+                                <div ></div>
+                            </div>
+                            <div class="shotsCheck regular">
+                                Shots
+                                <div ></div>
+                            </div>
+                            <div class="sizeCheck regular">
+                                Size
+                                <div></div>
+                            </div>
+                        </section>
+                        <section class="syrupMenu">
+                            <div class="syrupCheck regular">
+                                Syrup
+                                <div ></div>
+                            </div>
+                        </section>
+                        <section class="milkMenu">
+                            <div class="milkCheck regular">
+                                Milk
+                                <div></div>
+                            </div>
+                        </section>
+                        <section class="customMenu">
+                            <div class="customCheck regular">
+                                Custom
+                                <div></div>
+                            </div>
+                        </section>
+                        <section class="drinkName">
+                            <div class="drinkCheck regular">
+                                Drink
+                                <div></div>
+                            </div>
+                        </section>
+                    </form>
+                    <section class="drinkType">
+                        
+                    </section>
+                    <section class="extras">
+                        <div>Questions</div>
+                        <div class = 'hidden'>Sku Entry</div>
+                        <div>Copy Drink</div>
+                        <div>Add Shot</div>
+                        <div>Ask Me</div>
+                        <div class='nextDrink'>Next Drink</div>
+                    </section>
+                </section>
+                
+            </section>
+        </section>
+        
+    </div>
+    <i id="mousePointer" class="fa-solid fa-hand-pointer notVisible"></i>
+    <section class="api">
+        <ul>API Links:
+            <li><a class="apiDrinks" href="http://localhost:8000/api/coreDrinks">All Drinks</a></li>
+            <li><a class="apiCustomers" href="http://localhost:8000/api/allcustomers">All Customers</a></li>
+            <li><a class="apiRoasts" href="http://localhost:8000/api/roasts">Roasts</a></li>
+            <li><a class="apiCust" href="http://localhost:8000/api/customizations">Customizations</a></li>
+        </ul>
+    </section>
+    <footer class = 'hidden'>
+        <button class="local">Local</button>
+        <button class="heroku">Heroku</button>
+    </footer>
+    
+    <script type="text/javascript" src="../Menu/menu.js"></script>
+</body>
+
+</html>
