@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks POS</title>
+    <link rel="stylesheet" href="controllers/public/home.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Starbucks POS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Core Drinks</h2>
+            <a href="controllers/public/Core Drinks/coreDrinks.html">Go to Core Drinks</a>
+        </section>
+        <section>
+            <h2>Menu</h2>
+            <a href="controllers/public/Menu/menu.html">Go to Menu</a>
+        </section>
+        <section>
+            <h2
