@@ -656,7 +656,7 @@ function addTheIcedWord(){
 
 
 
-let heroku = 'https://coffee-trainer.herokuapp.com/api/coredrinks'
+let heroku = 'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/coredrinks'
 let local = 'http://localhost:8000/api/coredrinks'
 
 const statusLight = document.querySelector('.statusLight')
@@ -1409,7 +1409,7 @@ function errorMessage(message,color){
 
 let postUrl
 let production = 'dev'
-let uhhh = "https://coffee-trainer.herokuapp.com/menu"
+let uhhh = "https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/menu"
 function dynamicURL(word){
     let loc = window.location.href.includes('coffee')
     if(loc){
@@ -1430,13 +1430,13 @@ if(production === 'dev'){
     postUrl ='http://localhost:8000/order'
 }else
 if(production=== 'live'){
-    localStorage.setItem('LastClicked',["https://coffee-trainer.herokuapp.com/api/customizations",heroku,"https://coffee-trainer.herokuapp.com/api/customers,'https://coffee-trainer.herokuapp.com/order'"])
+    localStorage.setItem('LastClicked',["https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations",heroku,"https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers,'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/order'"])
     removeAllChildNodes(document.querySelector('.items'))
     removeAllChildNodes(document.querySelector('.drinkType'))
-    apiRequestForCustomizations("https://coffee-trainer.herokuapp.com/api/customizations")
-    apiRequestCustomer('https://coffee-trainer.herokuapp.com/api/customers')
+    apiRequestForCustomizations("https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations")
+    apiRequestCustomer('https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers')
     apiRequest(heroku)
-    postUrl ='https://coffee-trainer.herokuapp.com/order'
+    postUrl ='https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/order'
 }
 
 document.querySelectorAll('.findOrder').forEach((elem)=>{
