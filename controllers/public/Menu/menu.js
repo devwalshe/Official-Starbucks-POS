@@ -656,8 +656,8 @@ function addTheIcedWord(){
 
 
 
-let heroku = 'https://coffee-trainer.herokuapp.com/api/coredrinks'
-let local = 'http://localhost:8000/api/coredrinks'
+let heroku = 'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/coredrinks'
+let local = 'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/coredrinks'
 
 const statusLight = document.querySelector('.statusLight')
 async function apiRequest(url){  //Calls the API and brings drink data to the 
@@ -705,7 +705,7 @@ function shuffle(array) {
 
 async function allcustom(){
     try{
-        const response = await fetch('http://localhost:8000/api/allnames')
+        const response = await fetch('https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/allnames')
         const data = await response.json()
         console.log(data)
     }
@@ -1409,7 +1409,7 @@ function errorMessage(message,color){
 
 let postUrl
 let production = 'dev'
-let uhhh = "https://coffee-trainer.herokuapp.com/menu"
+let uhhh = "http://localhost:8000/menu"
 function dynamicURL(word){
     let loc = window.location.href.includes('coffee')
     if(loc){
@@ -1421,22 +1421,22 @@ function dynamicURL(word){
 }
 dynamicURL()
 if(production === 'dev'){
-    localStorage.setItem('LastClicked',["http://localhost:8000/api/customizations",local,'http://localhost:8000/api/customers','https://localhost:8000/order'])
+    localStorage.setItem('LastClicked',["https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations",local,'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers','https://localhost:8000/order'])
     removeAllChildNodes(document.querySelector('.items'))
     removeAllChildNodes(document.querySelector('.drinkType'))
-    apiRequestForCustomizations("http://localhost:8000/api/customizations")
+    apiRequestForCustomizations("https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations")
     apiRequest(local)
-    apiRequestCustomer('http://localhost:8000/api/customers')
+    apiRequestCustomer('https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers')
     postUrl ='http://localhost:8000/order'
 }else
 if(production=== 'live'){
-    localStorage.setItem('LastClicked',["https://coffee-trainer.herokuapp.com/api/customizations",heroku,"https://coffee-trainer.herokuapp.com/api/customers,'https://coffee-trainer.herokuapp.com/order'"])
+    localStorage.setItem('LastClicked',["https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations",heroku,"https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers,'http://localhost:8000/order'"])
     removeAllChildNodes(document.querySelector('.items'))
     removeAllChildNodes(document.querySelector('.drinkType'))
-    apiRequestForCustomizations("https://coffee-trainer.herokuapp.com/api/customizations")
-    apiRequestCustomer('https://coffee-trainer.herokuapp.com/api/customers')
+    apiRequestForCustomizations("https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations")
+    apiRequestCustomer('https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers')
     apiRequest(heroku)
-    postUrl ='https://coffee-trainer.herokuapp.com/order'
+    postUrl ='http://localhost:8000/order'
 }
 
 document.querySelectorAll('.findOrder').forEach((elem)=>{
