@@ -656,7 +656,7 @@ function addTheIcedWord(){
 
 
 
-let heroku = 'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/coredrinks'
+let heroku = 'http://localhost:8000/api/coredrinks'
 let local = 'http://localhost:8000/api/coredrinks'
 
 const statusLight = document.querySelector('.statusLight')
@@ -1409,7 +1409,7 @@ function errorMessage(message,color){
 
 let postUrl
 let production = 'dev'
-let uhhh = "https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/menu"
+let uhhh = "http://localhost:8000/menu"
 function dynamicURL(word){
     let loc = window.location.href.includes('coffee')
     if(loc){
@@ -1430,13 +1430,13 @@ if(production === 'dev'){
     postUrl ='http://localhost:8000/order'
 }else
 if(production=== 'live'){
-    localStorage.setItem('LastClicked',["https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations",heroku,"https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers,'https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/order'"])
+    localStorage.setItem('LastClicked',["http://localhost:8000/api/customizations",heroku,"http://localhost:8000/api/customers,'http://localhost:8000/order'"])
     removeAllChildNodes(document.querySelector('.items'))
     removeAllChildNodes(document.querySelector('.drinkType'))
-    apiRequestForCustomizations("https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customizations")
-    apiRequestCustomer('https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/api/customers')
+    apiRequestForCustomizations("http://localhost:8000/api/customizations")
+    apiRequestCustomer('http://localhost:8000/api/customers')
     apiRequest(heroku)
-    postUrl ='https://official-starbucks-ir5h3tpf6-imwalshe.vercel.app/order'
+    postUrl ='http://localhost:8000/order'
 }
 
 document.querySelectorAll('.findOrder').forEach((elem)=>{
