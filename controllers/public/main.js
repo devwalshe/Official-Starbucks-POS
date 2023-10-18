@@ -31,7 +31,7 @@ changeTheLinks(window.location.href.toString())
 async function apiRequest(){
     
     try{
-        const response = await fetch(`https://cofee-trainer.herokuapp.com/api/coredrinks`)
+        const response = await fetch(`https://6528f2abe226487972bd9b0f--effulgent-bavarois-ff06bf.netlify.app/controllers/public/menu/menu/api/coreDrinks`)
         const data = await response.json()
 
         Object.keys(data).forEach(key => {

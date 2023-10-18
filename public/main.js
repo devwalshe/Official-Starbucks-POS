@@ -31,7 +31,7 @@ changeTheLinks(window.location.href.toString())
 async function apiRequest(){
     
     try{
-        const response = await fetch(`https://cofee-trainer.herokuapp.com/api/coredrinks`)
+        const response = await fetch(`https://official-starbucks-pos.vercel.app/pos`)
         const data = await response.json()
 
         Object.keys(data).forEach(key => {
